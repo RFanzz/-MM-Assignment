@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <header>     
+    <header>
         <div class="header-title">
-            <img src="images/SekolahMMU_Name.png">
+            <img src="images/SekolahMMU_Name.png" alt="Sekolah MMU Logo">
         </div>
     </header>
 
@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <header class="event1-header">
+    <header class="event-header">
         <h1>Sekolah@MMU Slim River</h1>
     </header>
 
@@ -35,9 +35,9 @@
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
 
-
         <div class="event-details">
             <h2>Event Information</h2>
+
             <div class="dropdown">
                 <button class="dropdown-btn">Location</button>
                 <div class="dropdown-content">
@@ -55,19 +55,15 @@
                 <button class="dropdown-btn">Description</button>
                 <div class="dropdown-content">
                     <p>Program pertama pada tahun 2023 anjuran Sekretariat Sekolah@MMU merupakan comeback selepas
-                        pendemik Covid-19 telah
-                        diadakan di Johor. Sebanyak 5 buah sekolah telah dipilih untuk menyertai program pada kali ini.
-                        Majlis penutup program
-                        telah dirasmikan oleh YB Cik Norlizah binti Noh (EXCO Pendidikan, Penerangan & Komunikasi Johor)
-                    </p>
+                        pandemik Covid-19 telah diadakan di Johor...</p>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button class="dropdown-btn">Participants</button>
                 <div class="dropdown-content">
-                    <p>Total Facilitators: 94 person</p>
-                    <p>Total Participants: 550 person</p>
+                    <p>Total Facilitators: 94 persons</p>
+                    <p>Total Participants: 550 persons</p>
                 </div>
             </div>
 
@@ -84,6 +80,15 @@
         </div>
     </section>
 
+    <footer>
+        <p>&copy; 2025 Sekretariat Sekolah@MMU</p>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
 
     <script>
         let currentIndex = 0;
@@ -97,13 +102,7 @@
         ];
 
         function moveSlide(step) {
-            currentIndex += step;
-            if (currentIndex >= images.length) {
-                currentIndex = 0; // Loop back to the first image
-            }
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1; // Go to the last image
-            }
+            currentIndex = (currentIndex + step + images.length) % images.length;
             document.getElementById("event-img").src = images[currentIndex];
         }
     </script>

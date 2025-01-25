@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="header-title">
-            <img src="images/SekolahMMU_Name.png">
+            <img src="images/SekolahMMU_Name.png" alt="Sekolah MMU Logo">
         </div>
     </header>
 
@@ -23,25 +23,24 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+
     <header class="event1-header">
         <h1>Sekolah@MMU Sabah 2023</h1>
     </header>
 
     <section class="event-container">
         <div class="event-gallery">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="prev" onclick="moveSlide(-1)" aria-label="Previous Image">&#10094;</button>
             <img id="event-img" src="Event3_Img/Event3_Img1.jpg" alt="Event Image">
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="next" onclick="moveSlide(1)" aria-label="Next Image">&#10095;</button>
         </div>
-
 
         <div class="event-details">
             <h2>Event Information</h2>
             <div class="dropdown">
                 <button class="dropdown-btn">Location</button>
                 <div class="dropdown-content">
-                    <p>Tempat :</p>
-                    <p>SMK Kuhara, Tawau</p>
+                    <p>Tempat: SMK Kuhara, Tawau</p>
                     <p>Tarikh: 13 – 15 Oktober 2023</p>
                 </div>
             </div>
@@ -49,12 +48,17 @@
             <div class="dropdown">
                 <button class="dropdown-btn">Description</button>
                 <div class="dropdown-content">
-                    <p>Program penutup bagi tahun 2023 anjuran Sekretariat Sekolah@MMU telah diadakan di negeri Sabah. Sebuah sekolah telah
-                    dipilih untuk menyertai program pada kali ini dengan bantuan daripada seorang alumni sekolah. Dengan kerjasama dan
-                    sokongan daripada Kementerian Komunikasi dan Digital (KKD) serta Malaysia Digital Economy Corporation (MDEC) dan Yayasan
-                    Universiti Multimedia (YUM), sebuah studio Sekolah@MMU telah disiapkan sebagai sumbangan kepada pihak sekolah. Majlis
-                    penutup program telah dirasmikan oleh YB Datuk Andi Suryadi bin Bandi (Pembantu Menteri Pembangunan Perindustrian dan
-                    Keusahawanan Sabah merangkap Ahli Parlimen Kalabakan dan ADUN Tanjung Batu)
+                    <p>Program penutup bagi tahun 2023 anjuran Sekretariat Sekolah@MMU telah diadakan di negeri Sabah.
+                        Sebuah sekolah telah
+                        dipilih untuk menyertai program pada kali ini dengan bantuan daripada seorang alumni sekolah.
+                        Dengan kerjasama dan
+                        sokongan daripada Kementerian Komunikasi dan Digital (KKD) serta Malaysia Digital Economy
+                        Corporation (MDEC) dan Yayasan
+                        Universiti Multimedia (YUM), sebuah studio Sekolah@MMU telah disiapkan sebagai sumbangan kepada
+                        pihak sekolah. Majlis
+                        penutup program telah dirasmikan oleh YB Datuk Andi Suryadi bin Bandi (Pembantu Menteri
+                        Pembangunan Perindustrian dan
+                        Keusahawanan Sabah merangkap Ahli Parlimen Kalabakan dan ADUN Tanjung Batu)
                     </p>
                 </div>
             </div>
@@ -78,7 +82,6 @@
             </div>
         </div>
     </section>
-
 
     <script>
         let currentIndex = 0;

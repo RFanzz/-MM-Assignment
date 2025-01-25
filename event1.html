@@ -11,10 +11,10 @@
 <body>
     <header>
         <div class="header-title">
-            <img src="images/SekolahMMU_Name.png">
+            <img src="images/SekolahMMU_Name.png" alt="Sekolah MMU Logo">
         </div>
     </header>
-    
+
     <nav>
         <div class="nav-links">
             <a href="index.html">Home</a>
@@ -23,6 +23,7 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+
     <header class="event1-header">
         <h1>Sekolah@MMU Edisi Maya</h1>
     </header>
@@ -34,13 +35,13 @@
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
 
-    
         <div class="event-details">
             <h2>Event Information</h2>
+
             <div class="dropdown">
                 <button class="dropdown-btn">Location</button>
                 <div class="dropdown-content">
-                    <p>Tempat :</p>
+                    <p>Tempat:</p>
                     <p>SMK Dato’ Bentara Luar</p>
                     <p>SMK Dato’ Syed Esa</p>
                     <p>SMK Sultan Alauddin Riayat Shah 1</p>
@@ -49,16 +50,15 @@
                     <p>Tarikh: 21 – 23 July 2023</p>
                 </div>
             </div>
-    
+
             <div class="dropdown">
                 <button class="dropdown-btn">Description</button>
                 <div class="dropdown-content">
-                    <p>Program pertama pada tahun 2023 anjuran Sekretariat Sekolah@MMU merupakan comeback selepas pendemik Covid-19 telah
-                    diadakan di Johor. Sebanyak 5 buah sekolah telah dipilih untuk menyertai program pada kali ini. Majlis penutup program
-                    telah dirasmikan oleh YB Cik Norlizah binti Noh (EXCO Pendidikan, Penerangan & Komunikasi Johor)</p>
+                    <p>Program pertama pada tahun 2023 anjuran Sekretariat Sekolah@MMU merupakan comeback selepas
+                        pendemik Covid-19...</p>
                 </div>
             </div>
-    
+
             <div class="dropdown">
                 <button class="dropdown-btn">Participants</button>
                 <div class="dropdown-content">
@@ -66,20 +66,27 @@
                     <p>Total Participants: 550 person</p>
                 </div>
             </div>
-    
+
             <div class="dropdown">
                 <button class="dropdown-btn">Partnership</button>
                 <div class="dropdown-content">
                     <p>Yayasan Makmur Batu Pahat</p>
                     <p>Yayasan Pelajaran Johor</p>
                     <p>Pejabat Menteri Besar Johor</p>
-                    <p>Silver Brand Printing</p>
-                    <p>Yayasan Universiti Multimedia</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <footer>
+        <p>&copy; 2025 Sekretariat Sekolah@MMU</p>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
 
     <script>
         let currentIndex = 0;
@@ -91,13 +98,7 @@
         ];
 
         function moveSlide(step) {
-            currentIndex += step;
-            if (currentIndex >= images.length) {
-                currentIndex = 0; // Loop back to the first image
-            }
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1; // Go to the last image
-            }
+            currentIndex = (currentIndex + step + images.length) % images.length;
             document.getElementById("event-img").src = images[currentIndex];
         }
     </script>
