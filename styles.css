@@ -1,0 +1,147 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: black;
+    padding: 35px 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    position: absolute;
+    left: 20px;
+}
+
+.header-logo img {
+    height: 100px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Section styling */
+section {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: block;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#back-to-top {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/* Container for all 4 items */
+.back-to-top-links {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distributes them evenly */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling for each individual back-to-top link */
+.back-to-top-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-to-top-link img {
+    width: 40px;
+    height: 40px;
+}
+
+.back-to-top-link:hover {
+    color: #007BFF;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #ddd;
+}

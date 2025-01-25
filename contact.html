@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactstyles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="images/sekretariat_new(white).png" alt="Website Logo">
+        </div>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+<section class="contact-container">
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Address:</strong> Persiaran Multimedia, 63100 Cyberjaya, Selangor</p>
+        <p><strong>Email:</strong> info@sekolahmmu.com</p>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4026.1168385259907!2d101.63932547501783!3d2.927771497048561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb6e4a9d3b7a1%3A0xd0f74e8ad10f1129!2sMultimedia%20University%20-%20MMU%20Cyberjaya!5e1!3m2!1sen!2smy!4v1737777565742!5m2!1sen!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; All Rights Reserved. Sekretariat Sekolah@MMU</p>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
