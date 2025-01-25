@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="eventstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/sekretariat_new(white).png" alt="Website Logo">
+        </div>
+        <h1>Our Portfolio</h1>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header class="event1-header">
+        <h1>Sekolah@MMU Slim River</h1>
+    </header>
+
+    <section class="event-container">
+        <div class="event-gallery">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <img id="event-img" src="Event2_Img/Event2_Img1.png" alt="Event Image">
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+
+        <div class="event-details">
+            <h2>Event Information</h2>
+            <div class="dropdown">
+                <button class="dropdown-btn">Location</button>
+                <div class="dropdown-content">
+                    <p>Tempat :</p>
+                    <p>SMK Dato’ Bentara Luar</p>
+                    <p>SMK Dato’ Syed Esa</p>
+                    <p>SMK Sultan Alauddin Riayat Shah 1</p>
+                    <p>SM Sains Muar</p>
+                    <p>SM Sains Sembrong</p>
+                    <p>Tarikh: 21 – 23 July 2023</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Description</button>
+                <div class="dropdown-content">
+                    <p>Program pertama pada tahun 2023 anjuran Sekretariat Sekolah@MMU merupakan comeback selepas
+                        pendemik Covid-19 telah
+                        diadakan di Johor. Sebanyak 5 buah sekolah telah dipilih untuk menyertai program pada kali ini.
+                        Majlis penutup program
+                        telah dirasmikan oleh YB Cik Norlizah binti Noh (EXCO Pendidikan, Penerangan & Komunikasi Johor)
+                    </p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Participants</button>
+                <div class="dropdown-content">
+                    <p>Total Facilitators: 94 person</p>
+                    <p>Total Participants: 550 person</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Partnership</button>
+                <div class="dropdown-content">
+                    <p>Yayasan Makmur Batu Pahat</p>
+                    <p>Yayasan Pelajaran Johor</p>
+                    <p>Pejabat Menteri Besar Johor</p>
+                    <p>Silver Brand Printing</p>
+                    <p>Yayasan Universiti Multimedia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let currentIndex = 0;
+        const images = [
+            "Event2_Img/Event2_Img1.png",
+            "Event2_Img/Event2_Img2.png",
+            "Event2_Img/Event2_Img3.jpg",
+            "Event2_Img/Event2_Img4.jpg",
+            "Event2_Img/Event2_Img5.jpg",
+            "Event2_Img/Event2_Img6.jpg"
+        ];
+
+        function moveSlide(step) {
+            currentIndex += step;
+            if (currentIndex >= images.length) {
+                currentIndex = 0; // Loop back to the first image
+            }
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1; // Go to the last image
+            }
+            document.getElementById("event-img").src = images[currentIndex];
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="eventstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/sekretariat_new(white).png" alt="Website Logo">
+        </div>
+        <h1>Our Portfolio</h1>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header class="event1-header">
+        <h1>Sekolah@MMU Sabah 2023</h1>
+    </header>
+
+    <section class="event-container">
+        <div class="event-gallery">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <img id="event-img" src="Event3_Img/Event3_Img1.jpg" alt="Event Image">
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+
+        <div class="event-details">
+            <h2>Event Information</h2>
+            <div class="dropdown">
+                <button class="dropdown-btn">Location</button>
+                <div class="dropdown-content">
+                    <p>Tempat :</p>
+                    <p>SMK Kuhara, Tawau</p>
+                    <p>Tarikh: 13 – 15 Oktober 2023</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Description</button>
+                <div class="dropdown-content">
+                    <p>Program penutup bagi tahun 2023 anjuran Sekretariat Sekolah@MMU telah diadakan di negeri Sabah. Sebuah sekolah telah
+                    dipilih untuk menyertai program pada kali ini dengan bantuan daripada seorang alumni sekolah. Dengan kerjasama dan
+                    sokongan daripada Kementerian Komunikasi dan Digital (KKD) serta Malaysia Digital Economy Corporation (MDEC) dan Yayasan
+                    Universiti Multimedia (YUM), sebuah studio Sekolah@MMU telah disiapkan sebagai sumbangan kepada pihak sekolah. Majlis
+                    penutup program telah dirasmikan oleh YB Datuk Andi Suryadi bin Bandi (Pembantu Menteri Pembangunan Perindustrian dan
+                    Keusahawanan Sabah merangkap Ahli Parlimen Kalabakan dan ADUN Tanjung Batu)
+                    </p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Participants</button>
+                <div class="dropdown-content">
+                    <p>Total Facilitators: 35 person</p>
+                    <p>Total Participants: 120 person</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Partnership</button>
+                <div class="dropdown-content">
+                    <p>Kementerian Komunikasi dan Digital (KKD)</p>
+                    <p>Malaysia Digital Economy Corporation (MDEC)</p>
+                    <p>Vertico.my Printing</p>
+                    <p>Yayasan Universiti Multimedia (YUM)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let currentIndex = 0;
+        const images = [
+            "Event3_Img/Event3_Img1.jpg",
+            "Event3_Img/Event3_Img2.jpg",
+            "Event3_Img/Event3_Img3.jpg",
+            "Event3_Img/Event3_Img4.png",
+            "Event3_Img/Event3_Img5.jpg",
+            "Event3_Img/Event3_Img6.jpg"
+        ];
+
+        function moveSlide(step) {
+            currentIndex += step;
+            if (currentIndex >= images.length) {
+                currentIndex = 0; // Loop back to the first image
+            }
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1; // Go to the last image
+            }
+            document.getElementById("event-img").src = images[currentIndex];
+        }
+    </script>
+</body>
+
+</html>
