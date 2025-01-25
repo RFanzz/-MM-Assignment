@@ -17,6 +17,16 @@ header {
     position: relative;
 }
 
+.header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    padding: 35px 20px;
+    position: relative;
+}
+
 .header-logo {
     position: absolute;
     left: 20px;
