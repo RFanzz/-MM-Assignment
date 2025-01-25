@@ -85,6 +85,27 @@ section {
     border-radius: 10px;
 }
 
+.video-container {
+    text-align: center;
+    /* Centers the video and title */
+    margin: 40px auto;
+    /* Adds space around the section */
+    max-width: 800px;
+    /* Controls video width */
+}
+
+.video-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    /* Makes video responsive */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
 
 /* Footer styling */
 footer {
