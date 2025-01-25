@@ -11,16 +11,16 @@
 <body>
     <header>
         <div class="header-title">
-            <img src="images/SekolahMMU_Name.png">
+            <img src="images/SekolahMMU_Name.png" alt="Sekolah MMU Logo">
         </div>
-    
     </header>
 
     <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
@@ -28,7 +28,7 @@
     <header class="header-2">
         <h1>Our Past Events</h1>
     </header>
-    
+
     <section class="event-list">
         <div class="event-item">
             <a href="event1.html">
@@ -66,6 +66,11 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
