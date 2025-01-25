@@ -12,12 +12,12 @@
 
     <header>
         <div class="header-title">
-            <img src="images/SekolahMMU_Name.png">
+            <img src="images/SekolahMMU_Name.png" alt="Sekolah MMU">
         </div>
-
     </header>
 
     <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -27,25 +27,25 @@
     </nav>
 
     <section id="home">
-        <img src="images/Sekolah_Main_Image.jpg" width="900">
+        <img src="images/Sekolah_Main_Image.jpg" alt="Main Image">
     </section>
 
     <section id="back-to-top">
         <div class="back-to-top-links">
             <a href="#top" class="back-to-top-link">
-                <img src="images/volunteerism_logo.svg" alt="Back to top">
+                <img src="images/volunteerism_logo.svg" alt="Volunteerism">
                 <h3>Volunteerism</h3>
             </a>
             <a href="#top" class="back-to-top-link">
-                <img src="images/Tech_Icon2.png" alt="Back to top">
+                <img src="images/Tech_Icon2.png" alt="Technology">
                 <h3>Technology</h3>
             </a>
             <a href="#top" class="back-to-top-link">
-                <img src="images/entrepreneur_Icon3.png" alt="Back to top">
+                <img src="images/entrepreneur_Icon3.png" alt="Entrepreneurship">
                 <h3>Entrepreneurship</h3>
             </a>
             <a href="#top" class="back-to-top-link">
-                <img src="images/Innovation_Icon3.jpg" alt="Back to top">
+                <img src="images/Innovation_Icon3.jpg" alt="Innovation">
                 <h3>Innovation</h3>
             </a>
         </div>
@@ -60,6 +60,12 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 
 </body>
 
